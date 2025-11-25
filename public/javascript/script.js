@@ -62,7 +62,7 @@ const sampleProjects = {
   },
   "3": {
     title: 'SBL Financial',
-    description: 'Part of my work placement at SBL Financial was to adpat and create new pages of their website. This was done through Elementor Pro so was not the best showcase of my ability. I am demonstrating pages that I have created but changes have been made to the website after I left so the website that is live is no longer a reflection of my work.',
+    description: 'Part of my work placement at SBL Financial was to adapt and create new pages of their website. This was done through Elementor Pro so was not the best showcase of my ability. I am demonstrating pages that I have created but changes have been made to the website after I left so the website that is live is no longer a reflection of my work.',
     images: ['/media/SBLbridging.png']
   },
   "4": {

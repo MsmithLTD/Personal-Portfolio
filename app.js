@@ -49,7 +49,7 @@ class Server {
     }
 }
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const server = new Server(port);
 
 Server.initializeDatabase();

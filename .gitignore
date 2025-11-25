@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# macOS files
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env

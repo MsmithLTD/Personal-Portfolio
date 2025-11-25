@@ -1,0 +1,44 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Getting Started with EJS",
+        "author": "Jane Doe",
+        "date": "2024-10-01",
+        "content": "<p>EJS (Embedded JavaScript) is a simple templating language that lets you generate HTML markup with plain JavaScript. In this post, we'll cover the basics of EJS and how to use it in your Node.js projects.</p><h3>Key Features of EJS:</h3><ul><li>Fast compilation and rendering</li><li>Simple syntax</li><li>Easy to debug</li><li>Supports Express out of the box</li></ul><p>Stay tuned for more in-depth tutorials on EJS!</p>",
+        "tags": ["EJS", "JavaScript", "Web Development"]
+      },
+      {
+        "id": 2,
+        "title": "The Power of Express.js",
+        "author": "John Smith",
+        "date": "2024-10-05",
+        "content": "<p>Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. In this post, we'll explore some of the key advantages of using Express.js.</p><h3>Why Choose Express.js?</h3><ol><li>Minimalist and flexible</li><li>Large community and ecosystem</li><li>Easy to set up and configure</li><li>Great for building RESTful APIs</li></ol><p>Express.js is an excellent choice for both beginners and experienced developers looking to build scalable web applications.</p>",
+        "tags": ["Express.js", "Node.js", "Backend Development"]
+      },
+      {
+        "id": 3,
+        "title": "CSS Best Practices for Beginners",
+        "author": "Emily Chen",
+        "date": "2024-10-10",
+        "content": "<p>CSS (Cascading Style Sheets) is a crucial part of web development, allowing you to style and layout your web pages. Here are some best practices for beginners:</p><ul><li>Use a CSS reset or normalize.css</li><li>Organize your CSS with a consistent methodology (e.g., BEM)</li><li>Utilize flexbox and grid for layouts</li><li>Keep your selectors simple and efficient</li><li>Use CSS variables for easy theming</li></ul><p>Remember, writing clean and maintainable CSS takes practice. Keep coding and refining your skills!</p>",
+        "tags": ["CSS", "Web Design", "Frontend Development"]
+      },
+      {
+        "id": 4,
+        "title": "Introduction to MongoDB",
+        "author": "Alex Johnson",
+        "date": "2024-10-15",
+        "content": "<p>MongoDB is a popular NoSQL database that offers flexibility and scalability for modern applications. In this post, we'll cover the basics of MongoDB and its key concepts.</p><h3>MongoDB Basics:</h3><ul><li>Document-oriented storage</li><li>Flexible schema design</li><li>Powerful query language</li><li>Horizontal scalability</li></ul><p>Whether you're building a small application or a large-scale system, MongoDB can be an excellent choice for your database needs.</p>",
+        "tags": ["MongoDB", "Database", "NoSQL"]
+      },
+      {
+        "id": 5,
+        "title": "Mastering Async/Await in JavaScript",
+        "author": "Sarah Lee",
+        "date": "2024-10-20",
+        "content": "<p>Async/await is a powerful feature in JavaScript that simplifies working with asynchronous code. Let's explore how to use it effectively in your projects.</p><h3>Key Points:</h3><ol><li>Understanding Promises</li><li>The 'async' keyword</li><li>Using 'await' to handle Promises</li><li>Error handling with try/catch</li></ol><p>With async/await, you can write asynchronous code that looks and behaves like synchronous code, making it easier to read and maintain.</p>",
+        "tags": ["JavaScript", "Async/Await", "Programming"]
+      }
+    ]
+}

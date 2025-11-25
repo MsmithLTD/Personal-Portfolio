@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Michael Smith — Portfolio</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- main css -->
+  <link rel="stylesheet" href="/styling/home.css">
+</head>
+<body>
+  <!--NAV BAR-->
+  <nav class="floating-nav">
+    <button data-target="hero">
+      <i class="icon">🏠</i>
+      <span>Home</span>
+    </button>
+
+    <button data-target="about">
+      <i class="icon">👤</i>
+      <span>About</span>
+    </button>
+
+    <button data-target="projects">
+      <i class="icon">💼</i>
+      <span>Projects</span>
+    </button>
+
+    <button data-target="experience">
+      <i class="icon">📜</i>
+      <span>Experience</span>
+    </button>
+
+    <button data-target="contact">
+      <i class="icon">✉️</i>
+      <span>Contact</span>
+    </button>
+  </nav>
+  <!-- HERO / Title -->
+  <div class="container">
+    <header class="titleContainer" id="hero">
+      <h1 class="name">Hey! I'm Michael Smith</h1>
+      <div class="subtitle"><h2>Web Developer / Computer Science Student</h2></div>
+
+      <div class="socialButtons">
+        <a id="SBlinkedin" href="https://www.linkedin.com/in/michael-smith-184841296/" target="_blank" aria-label="LinkedIn">
+          <img src="/media/linkedin.png" alt="LinkedIn">
+        </a>
+        <a id="SBcv" href="https://drive.google.com/file/d/1h7yfkTc3sBqUNs5e5QoKCkOzX8C2nv8h/view?usp=sharing" target="_blank" aria-label="CV">
+          <img src="/media/CV.png" alt="CV">
+        </a>
+      </div>
+      <button id="scrollNext" class="cta">Explore my past projects</button>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+      <div class="about-grid">
+        <div class="about-card" data-key="about-me">
+          <h3>About me</h3>
+          <p>Hi, my name is Michael Smith, I am an 18 year old, web developer / Computer Science Student and have a strong passion for software and digital systems. I am always looking for ways to improve in my industry and as a person! </p>
+        </div>
+
+        <div class="about-card" data-key="skills">
+          <h3>Skills and Qualifications</h3>
+          <p>Qualifications: T-Level in Digital Production Design and Development (Distinction achieved) / GCSEs (4-8)</p>
+          <p>Skills: Proficient coding languages: HTML, CSS, JS, EJS, Python, MongoDB</p>
+        </div>
+
+        <div class="about-card" data-key="interests">
+          <h3>Interests</h3>
+          <p>I enjoy many things in life: Music (Travis Scott/ Dave/ Future), Cooking (All types of cuisine), Hiking & Travelling (Not afraid to reach new heights, literally 🏔️), Sports (Football - Arsenal and Padel) and finally of course Web Development</p>
+        </div>
+
+        <div class="about-card large" data-key="next-steps">
+          <h3>Next steps</h3>
+          <p>I am currently applying to start university for Autumn 2026 to study Computer Science BSc. This will allow me to build up my techncial skills and bring new challenges my way! Equally, I am building more web solutions to add to my portfolio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <!-- ===== PROJECTS (drop-in) ===== -->
+<section id="projects" class="page">
+  <h2 class="section-head">Projects</h2>
+
+  <div class="projects-carousel"> <!-- wrapper must have this class -->
+    <button class="carousel-btn left" aria-label="Previous">&#10094;</button>
+
+    <div class="projects-track"> <!-- track must have this class -->
+      <article class="project" data-id="1">
+        <div class="preview">Preview</div>
+        <h4>Rolsa Technologies - EOY Exam</h4>
+        <p class="short">Eco sustainability hub/ seller of solar panels </p>
+        <div class="project-actions">
+          <button class="pill expand-btn">Expand</button>
+          <a class="pill link" href="#" target="_blank">View</a>
+        </div>
+      </article>
+
+      <article class="project" data-id="2">
+        <div class="preview">Preview</div>
+        <h4>Personal Portfolio Website</h4>
+        <p class="short">Show off my skills and projects</p>
+        <div class="project-actions">
+          <button class="pill expand-btn">Expand</button>
+          <a class="pill link" href="#" target="_blank">View</a>
+        </div>
+      </article>
+
+      <article class="project" data-id="3">
+        <div class="preview">Preview</div>
+        <h4>SBL Financial</h4>
+        <p class="short">Finance Company - Work experience</p>
+        <div class="project-actions">
+          <button class="pill expand-btn">Expand</button>
+        </div>
+      </article>
+
+      <article class="project" data-id="4">
+        <div class="preview">Preview</div>
+        <h4>Bean and Brew</h4>
+        <p class="short">Coffee Company - Practice website</p>
+        <div class="project-actions">
+          <button class="pill expand-btn">Expand</button>
+        </div>
+      </article>
+    </div>
+
+    <button class="carousel-btn right" aria-label="Next">&#10095;</button>
+  </div>
+</section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="page">
+      <h2 class="section-head">Experience</h2>
+      <div id="timeline" class="timeline"></div> 
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+      <h2 class="section-head">Contact</h2>
+
+      <div class="contact-card">
+        <form id="contactForm" autocomplete="off">
+          <input name="name" type="text" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message" rows="6" required></textarea>
+          <div class="form-actions">
+            <button class="btn send" type="submit">Send message</button>
+          </div>
+        </form>
+
+        <div id="contactStatus" class="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window" role="dialog" aria-modal="true">
+      <button id="closeModal" class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-inner">
+        <h3 id="modalTitle">Project</h3>
+        <div id="modalImages" class="modal-images"></div>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main script -->
+  <script src="/javascript/script.js"></script>
+</body>
+</html>

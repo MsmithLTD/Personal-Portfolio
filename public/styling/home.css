@@ -375,6 +375,7 @@ body::before {
   max-width: 720px;
   margin-bottom:12px; 
   border-radius:8px; 
+  padding: 10px;
   border:1px solid #ddd; 
   font-size:15px;
 }

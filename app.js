@@ -8,7 +8,6 @@ const Manager = require('./backend/dbManager');
 const Unprotected = require('./routes/unprotected');
 const authenticationRouter = require('./routes/authentication');
 const lessonRoutes = require('./backend/controllers/controllers');
-const contactRouter = require('./routes/contact'); // ⭐ add this
 
 class Server {
     constructor(port) {
@@ -35,7 +34,6 @@ class Server {
         this.app.use('/', Unprotected.router);
         this.app.use('/auth', authenticationRouter.router);
         this.app.use('/api', lessonRoutes);
-        this.app.use('/contact', contactRouter); // ⭐ enable contact form
     }
 
     start() {

@@ -84,80 +84,81 @@
 
     <!-- PROJECTS -->
     <!-- ===== PROJECTS (drop-in) ===== -->
-<section id="projects" class="page">
-  <h2 class="section-head">Projects</h2>
+  <section id="projects" class="page">
+    <h2 class="section-head">Projects</h2>
 
-  <div class="projects-carousel"> <!-- wrapper must have this class -->
-    <button class="carousel-btn left" aria-label="Previous">&#10094;</button>
+    <div class="projects-carousel"> <!-- wrapper must have this class -->
+      <button class="carousel-btn left" aria-label="Previous">&#10094;</button>
 
-    <div class="projects-track"> <!-- track must have this class -->
-      <article class="project" data-id="1">
-        <div class="preview">Preview</div>
-        <h4>Rolsa Technologies - EOY Exam</h4>
-        <p class="short">Eco sustainability hub/ seller of solar panels </p>
-        <div class="project-actions">
-          <button class="pill expand-btn">Expand</button>
-        </div>
-      </article>
-
-      <article class="project" data-id="2">
-        <div class="preview">Preview</div>
-        <h4>Personal Portfolio Website</h4>
-        <p class="short">Show off my skills and projects</p>
-        <div class="project-actions">
-          <button class="pill expand-btn">Expand</button>
-          <a class="pill link" href="#" target="_blank">View</a>
-        </div>
-      </article>
-
-      <article class="project" data-id="3">
-        <div class="preview">Preview</div>
-        <h4>SBL Financial</h4>
-        <p class="short">Finance Company - Work experience</p>
-        <div class="project-actions">
-          <button class="pill expand-btn">Expand</button>
-        </div>
-      </article>
-
-      <article class="project" data-id="4">
-        <div class="preview">Preview</div>
-        <h4>Bean and Brew</h4>
-        <p class="short">Coffee Company - Practice website</p>
-        <div class="project-actions">
-          <button class="pill expand-btn">Expand</button>
-        </div>
-      </article>
-    </div>
-
-    <button class="carousel-btn right" aria-label="Next">&#10095;</button>
-  </div>
-</section>
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="page">
-      <h2 class="section-head">Experience</h2>
-      <div id="timeline" class="timeline"></div> 
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="page">
-      <h2 class="section-head">Contact</h2>
-
-      <div class="contact-card">
-        <form id="contactForm" autocomplete="off" action="https://formsubmit.co@/Michael.Smith0707@outlook.com" method="POST">
-          <input name="name" type="text" placeholder="Your name" required>
-          <input name="email" type="email" placeholder="Your email" required>
-          <textarea name="message" placeholder="Your message" rows="6" required></textarea>
-          <div class="form-actions">
-            <button class="btn send" type="submit">Send message</button>
+      <div class="projects-track"> <!-- track must have this class -->
+        <article class="project" data-id="1">
+          <div class="preview">Preview</div>
+            <h4>Rolsa Technologies - EOY Exam</h4>
+            <p class="short">Eco sustainability hub/ seller of solar panels </p>
+          <div class="project-actions">
+            <button class="pill expand-btn">Expand</button>
           </div>
-        </form>
+        </article>
 
-        <div id="contactStatus" class="status" aria-live="polite"></div>
+        <article class="project" data-id="2">
+          <div class="preview">Preview</div>
+          <h4>Personal Portfolio Website</h4>
+          <p class="short">Show off my skills and projects</p>
+          <div class="project-actions">
+            <button class="pill expand-btn">Expand</button>
+            <a class="pill link" href="#" target="_blank">View</a>
+          </div>
+        </article>
+
+        <article class="project" data-id="3">
+          <div class="preview">Preview</div>
+          <h4>SBL Financial</h4>
+          <p class="short">Finance Company - Work experience</p>
+          <div class="project-actions">
+            <button class="pill expand-btn">Expand</button>
+        </div>
+        </article>
+
+        <article class="project" data-id="4">
+          <div class="preview">Preview</div>
+          <h4>Bean and Brew</h4>
+          <p class="short">Coffee Company - Practice website</p>
+          <div class="project-actions">
+            <button class="pill expand-btn">Expand</button>
+          </div>
+        </article>
       </div>
-    </section>
-  </div>
+
+      <button class="carousel-btn right" aria-label="Next">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="page">
+    <h2 class="section-head">Experience</h2>
+    <div id="timeline" class="timeline"></div> 
+  </section>
+
+  <!-- CONTACT -->
+   <section id="contact" class="page">
+    <h2 class="section-head">Contact Form</h2>
+    <div class="form-group">
+      <form action="https://formspree.io/f/xjkqplnr" method="POST">
+        <label> Your name:
+          <input type="name" name="name" class="form-control">
+        </label>
+        <label> Your email:
+          <input type="email" name="email" class="form-control">
+        </label>
+        <label> Your message:
+        <textarea name="message" class="form-control"></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+  
 
   <!-- PROJECT MODAL -->
   <div id="projectModal" class="modal" aria-hidden="true">

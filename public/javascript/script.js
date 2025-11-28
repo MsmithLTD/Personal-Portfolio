@@ -280,38 +280,3 @@ timelineData.forEach(item => {
     setCardWidths();
   });
 })();
-
-/* ====== CONTACT FORM ===== */
-const contactForm = document.getElementById('contactForm');
-const contactStatus = document.getElementById('contactStatus');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    contactStatus.textContent = 'Sending...';
-    contactStatus.style.color = '#fff';
-
-    const formData = Object.fromEntries(new FormData(contactForm));
-
-    try {
-      const res = await fetch('/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-
-      if (res.ok) {
-        contactStatus.textContent = "Message sent! I'll get back to you soon.";
-        contactStatus.style.color = "limegreen";
-        contactForm.reset();
-      } else {
-        const data = await res.json();
-        throw new Error(data.error || "Unknown error");
-      }
-    } catch (err) {
-      contactStatus.textContent = "Oops! Something went wrong. Try again.";
-      contactStatus.style.color = "red";
-      console.error("Contact form error:", err);
-    }
-  });
-}

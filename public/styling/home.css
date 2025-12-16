@@ -1,7 +1,4 @@
-/* ============================================================
-   FULL CSS — animated site-wide gradient + preserved styles
-   Replace your existing CSS with this entire file
-   ============================================================ */
+
 
 /* ====== BASE ====== */
 html, body {
@@ -19,7 +16,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ===== keep your social buttons CSS (restored) ===== */
+
 .socialButtons img{
   background-color: white;
   padding: 10px;
@@ -35,10 +32,7 @@ html, body {
   margin-left: 20px;
 }
 
-/* ============================================================
-   ANIMATED GRADIENT (UNOVERRIDABLE)
-   Implemented using body::before so section backgrounds can't hide it
-   ============================================================ */
+
 body {
   color: #fff;
   position: relative;
@@ -71,11 +65,7 @@ body::before {
   100% { background-position: 0% 50%; }
 }
 
-/* ============================================================
-   FULL-SCREEN SECTIONS
-   Make section backgrounds transparent so gradient shows through
-   (we keep content cards white where intended)
-   ============================================================ */
+
 .page, #hero {
   height: 100vh;                 /* full viewport height */
   display: flex;
@@ -142,8 +132,7 @@ body::before {
 }
 
 
-/* ====== HERO / TITLE ====== */
-/* keep the overlay image but let gradient show through */
+
 #hero {
   background: transparent; /* remove old gradient block */
 }
@@ -467,8 +456,8 @@ body::before {
   /*page*/
 
   html, body{
-    scroll-snap-type: y proximity;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
   }
 
   .page, #hero{
@@ -532,6 +521,7 @@ body::before {
 
   /*projects*/
 
+
   .projects-carousel {
     width: 550px;
     overflow: hidden;
@@ -565,7 +555,6 @@ body::before {
   }
 
   .form-group{
-
     width: 550px;
   }
 

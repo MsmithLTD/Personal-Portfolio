@@ -457,3 +457,116 @@ body::before {
   border-radius: 8px;
   object-fit: cover;
 }
+
+
+
+/*Mobile Format*/
+
+@media (max-width: 768px){
+
+  /*page*/
+
+  html, body{
+    scroll-snap-type: y proximity;
+    overflow-x: hidden;
+  }
+
+  .page, #hero{
+    padding: 20px 16px;
+  }
+
+  .name{
+    font-size: 42px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .subtitle h2{
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .socialButtons{
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  #scrollnext{
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  /*navbar*/
+
+  .floating-nav{
+    bottom: 16px;
+    padding: 10px 14px;
+    gap: 14px;
+  }
+
+  .floating-nav button span{
+    display: none;
+  }
+
+  .floating-nav button .icon{
+    font-size: 22px;
+  }
+
+  /*about grid*/
+  
+  #about{
+    height: auto;
+  }
+
+  .about-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card{
+    width: 550px;
+    transform: none !important;
+  }
+
+  /*projects*/
+
+  .projects-carousel {
+    width: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+
+  }
+
+  .projects-track{
+    display: flex;
+    gap: 18px;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .project{
+    max-width: 550px;
+    margin: 0 auto;
+    transform: none !important;
+  }
+
+  .preview{
+    width: 100%;
+  }
+
+  .carousel-btn{
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .form-group{
+
+    width: 550px;
+  }
+
+}

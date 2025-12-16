@@ -1,7 +1,7 @@
 document.querySelectorAll(".floating-nav button").forEach(btn => {
   btn.addEventListener("click", () => {
     const target = document.getElementById(btn.dataset.target);
-    if (target) {
+    if (target){
       target.scrollIntoView({ behavior: "smooth" });
     }
   });

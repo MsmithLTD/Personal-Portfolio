@@ -562,4 +562,7 @@ body::before {
     width: 80%;
   }
 
+  .form-control{
+    width: 92%;
+  }
 }
